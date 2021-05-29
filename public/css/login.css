@@ -4,6 +4,7 @@
     padding: 0px;
 }
 body{
+    background-color: #ebebeb;
     min-height: 100vh;
     position: relative;
     font-family: 'Roboto', sans-serif;
