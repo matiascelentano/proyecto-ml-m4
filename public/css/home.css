@@ -1,0 +1,138 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+/**HEADER**/
+header{
+    background-color: #EAC926;
+}
+.header-top-bar{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.logo{
+    width: 40%;
+    margin: 10px 15px 0px 0px;
+    max-width: 126px;
+}
+.header-banner{
+    width: 100%;
+}
+
+.form-search-bar{
+    position: relative;
+    width: 60%;
+}
+#search-bar{
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    margin-top: 10px;
+    width: 100%;
+    padding: 6px 24px 6px 0px;
+}
+#search-bar:focus{
+    outline: 0px;
+    box-shadow: 0 0 0 1pt #1259c3 inset;
+}
+.search-button{
+    position: absolute;
+    right: 2px;
+    top: 12px;
+    height: 22px;
+    padding: 1px 6px;
+    border: none;
+    border-radius: 0px 3px 0px 0px;
+    border-left: 1px solid #eee;
+    background-color: white;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
+/**Main**/
+main{
+    background-color: #ebebeb;
+}
+.main-section{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section-h2-titulo{
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+}
+.container-article{
+    max-width: 310px;
+    margin: 10px;
+    height: 420px;
+}
+.container-product{
+    background-color: white;
+    padding: 10px;
+    transition: all .2s;
+    border-radius: 4px;
+}
+.container-info{
+    position: relative;
+    border-top: 1px solid #eee;
+}
+.container-info i{
+    position: absolute;
+    top: -15px;
+    right: 5px;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    color: #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+}
+.article-contenido-precio{
+    display: inline-block;
+    width: 35%;
+}
+.article-contenido-sale{
+    display: inline-block;
+    color: #39b54a;
+}
+.descrip{
+    visibility: hidden;
+    opacity: 0%;
+    height: 0px;
+    transition: all .1s;
+}
+.container-product:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.container-product:hover .descrip{
+    visibility: visible;
+    opacity: 100%;
+    height: 46px;
+}
+.article-img-product{
+    width: 100%;
+}
+
+
+@media(min-width: 769px){
+    .container-product{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}

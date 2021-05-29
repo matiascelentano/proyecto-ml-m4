@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/register.css">
+    <title>Registrarse</title>
+</head>
+<body>
+    <header class="main-header">
+            <!-- HEADER LOGO/H2  -->
+            <div class="header-top-bar">
+                    <figure class="logo">
+                        <img src="/img/logo-mercado-liebre.svg" alt="">
+                    </figure >
+                <form action="/" method="GET" class="form-search-bar">
+                    <label for="search-bar"></label>
+                    <input type="text" name="search-bar" id="search-bar" placeholder="Buscar productos, marcas y más">
+                    <button type="submit" class="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <h2 class = 'text-header'><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</h2>
+            </div>
+            <!-- MENU HAMBURGER  -->
+            <a href="" class="burger-button">
+                <i class="fas fa-bars"></i>
+            </a>
+            <!-- HEADER BARRAS -->
+            <nav class="header-bottom-bar">
+                <!-- BARRA IZQUIERDA  -->
+                <ul class="left-bottom">
+                    <li><a href="#">Ofertas </a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+                <!-- BARRA DERECHA  -->
+                <ul class="right-bottom">
+                    <li><a href="/register">Creá tu cuenta </a><i class="far fa-address-card"></i></li>
+                    <li><a href="/login">Ingresá </a><i class="fas fa-sign-in-alt"></i></li>
+                    <li><a href="#">Mis compras </a><i class="fas fa-shopping-basket"></i></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <form action="/" method="POST" class="form-register">
+            <h1 class="titulo-form">Crea tu cuenta</h1>
+            <fieldset class="fieldset-register">
+                <legend class="titulo-user-datos">Nombre Completo</legend>
+                <label for="name"></label>
+                <input type="text" name="name" id="name" placeholder="Ingresa Nombre y Apellido" required class="user-datos">
+            </fieldset>
+            <fieldset class="fieldset-register">
+                <legend class="titulo-user-datos">Nombre de Usuario</legend>
+                <label for="username"></label>    
+                <input type="text" name="username" id="username" placeholder="Ingresar Nombre de Usuario" required class="user-datos">
+            </fieldset>
+            <fieldset class="fieldset-register">
+                <legend class="titulo-user-datos">Fecha de Nacimiento</legend>
+                <label for="date"></label>    
+                <input type="date" name="date" id="date" class="user-datos">
+            </fieldset>
+            <fieldset class="fieldset-register">
+                <legend class="titulo-user-datos">Domicilio</legend>
+                <label for="adress"></label>    
+                <input type="text" name="adress" id="adress" placeholder="Ingresa tu Domicilio" required class="user-datos">
+            </fieldset>
+            <fieldset class="fieldset-register">
+                <legend class="titulo-user-datos">Que desea hacer con su cuenta?</legend>
+                <label for="user-buy" class="radio-check">    
+                    <input type="radio" name="usertype" id="user-buy" required value="buy">
+                    Comprar
+                </label>
+                <label for="user-sell" class="radio-check">
+                    <input type="radio" name="usertype" id="user-sell" required value="sell">
+                    Vender
+                </label>    
+            </fieldset>
+            <fieldset class="fieldset-register" id="fieldset-checkboxes">
+                <legend class="titulo-user-datos">Intereses</legend>
+                <label for="checkbox1" class="checkboxes">
+                    <input type="checkbox" name="checkbox1" id="checkbox1">
+                    Electro
+                </label>
+                <label for="checkbox2" class="checkboxes">
+                    <input type="checkbox" name="checkbox2" id="checkbox2">
+                    Moda
+                </label>
+                <label for="checkbox3" class="checkboxes">
+                    <input type="checkbox" name="checkbox3" id="checkbox3">
+                    Hogar
+                </label>
+                <label for="checkbox4" class="checkboxes">
+                    <input type="checkbox" name="checkbox4" id="checkbox4">
+                    Jugueteria
+                </label>
+                <label for="checkbox5" class="checkboxes">
+                    <input type="checkbox" name="checkbox5" id="checkbox5">
+                    Vida sana
+                </label>
+            </fieldset>
+            <fieldset class="fieldset-register" id="avatar-fieldset">
+                <legend class="titulo-user-datos">Suba una imagen para su avatar</legend>
+                <label for="avatar"></label>
+                <div class="container-sendfile">
+                    <input type="file" name="avatar" id="avatar" accept="image/png, image/jpg">
+                </div>
+            </fieldset>
+            <fieldset class="fieldset-register">
+                <legend class="titulo-user-datos">Contraseña</legend>
+                <label for="password"></label>    
+                <input type="password" name="password" id="password" placeholder="Ingresa tu Contraseña" required class="user-datos">
+            </fieldset>
+            <fieldset class="fieldset-register">
+                <legend class="titulo-user-datos">Confirme su contraseña</legend>
+                <label for="password-r"></label>    
+                <input type="password" name="password-r" id="password-r" placeholder="Repetir Contraseña" required class="user-datos">
+            </fieldset>
+            <fieldset class="fieldset-register">
+                <button type="submit" class="boton-ml">
+                    Crear Cuenta
+                </button>
+            </fieldset>
+            <fieldset class="fieldset-register">
+                <button type="reset" class="boton-ml">
+                    Borrar Formulario
+                </button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+        <!-- FOOTER/SECCIONES FOOTER  -->
+            <section class="footer-section">
+                <i class="fas fa-credit-card"></i>
+                <h2 class="footer-section-h2">
+                    Pagá con tarjeta o en efectivo
+                </h2>
+                <p class="footer-section-p">
+                    Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!
+                </p>
+            </section>
+            <section class="footer-section">
+                <i class="fas fa-gift"></i>
+                <h2 class="footer-section-h2">
+                    Envío gratis desde $ 2.500
+                </h2>
+                <p class="footer-section-p">
+                    Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.
+                </p>
+            </section>
+            <section class="footer-section">
+                <i class="fas fa-user-shield"></i>
+                <h2 class="footer-section-h2">
+                    Seguridad, de principio a fin
+                </h2>
+                <p class="footer-section-p">
+                    ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.
+                </p>
+            </section>
+        </div>
+        <section class="footer-section">
+            <h2 class="footer-section-h2">
+                Copyright © 1999-2020 MercadoLiebre S.R.L.
+            </h2>
+        </section>
+    </footer>
+</body>
+</html>
