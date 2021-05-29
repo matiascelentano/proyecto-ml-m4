@@ -14,40 +14,41 @@
 </head>
 <body>
     <header class="main-header">
-            <!-- HEADER LOGO/H2  -->
-            <div class="header-top-bar">
-                    <figure class="logo">
-                        <img src="/img/logo-mercado-liebre.svg" alt="">
-                    </figure >
-                <form action="/" method="GET" class="form-search-bar">
-                    <label for="search-bar"></label>
-                    <input type="text" name="search-bar" id="search-bar" placeholder="Buscar productos, marcas y más">
-                    <button type="submit" class="search-button">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </form>
-                <h2 class = 'text-header'><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</h2>
-            </div>
-            <!-- MENU HAMBURGER  -->
-            <a href="" class="burger-button">
-                <i class="fas fa-bars"></i>
-            </a>
-            <!-- HEADER BARRAS -->
-            <nav class="header-bottom-bar">
-                <!-- BARRA IZQUIERDA  -->
-                <ul class="left-bottom">
-                    <li><a href="#">Ofertas </a></li>
-                    <li><a href="#">Tiendas Oficiales</a></li>
-                    <li><a href="">Vender</a></li>
-                    <li><a href="#">Ayuda</a></li>
-                </ul>
-                <!-- BARRA DERECHA  -->
-                <ul class="right-bottom">
-                    <li><a href="/register">Creá tu cuenta </a><i class="far fa-address-card"></i></li>
-                    <li><a href="/login">Ingresá </a><i class="fas fa-sign-in-alt"></i></li>
-                    <li><a href="#">Mis compras </a><i class="fas fa-shopping-basket"></i></li>
-                </ul>
-            </nav>
+        <!-- HEADER LOGO/H2  -->
+        <div class="header-top-bar">
+                <a href="/" class="logo">
+                    <img src="/img/logo-mercado-liebre.svg" alt="">
+                </a class="logo">  
+            <!-- BARRA DE BUSQUEDA  -->
+            <form action="/" method="GET" class="form-search-bar">
+                <label for="search-bar"></label>
+                <input type="text" name="search-bar" id="search-bar" placeholder="Buscar productos, marcas y más">
+                <button type="submit" class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <p class = 'text-header'><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
+        </div>
+        <!-- MENU HAMBURGER  -->
+        <button type="menu" class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <!-- HEADER BARRAS -->
+        <nav class="header-bottom-bar">
+            <!-- BARRA IZQUIERDA  -->
+            <ul class="left-bottom-bar">
+                <li><a href="#">Ofertas </a></li>
+                <li class="ul-long-li"><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <!-- BARRA DERECHA  -->
+            <ul class="right-bottom-bar">
+                <li class="ul-right-register"><a href="/register">Creá tu cuenta </a><i class="far fa-address-card"></i></li>
+                <li class="ul-right-login"><a href="/login">Ingresá </a><i class="fas fa-sign-in-alt"></i></li>
+                <li class="ul-right-purchases"><a href="#">Mis compras </a><i class="fas fa-shopping-basket"></i></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <form action="/" method="POST" class="form-register">
@@ -136,9 +137,9 @@
         </form>
     </main>
     <footer>
-        <div class="contenedor-footer">
+        <section class="container-footer">
         <!-- FOOTER/SECCIONES FOOTER  -->
-            <section class="footer-section">
+            <article class="footer-section" id="footer-article-1">
                 <i class="fas fa-credit-card"></i>
                 <h2 class="footer-section-h2">
                     Pagá con tarjeta o en efectivo
@@ -146,8 +147,8 @@
                 <p class="footer-section-p">
                     Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!
                 </p>
-            </section>
-            <section class="footer-section">
+            </article>
+            <article class="footer-section" id="footer-article-2">
                 <i class="fas fa-gift"></i>
                 <h2 class="footer-section-h2">
                     Envío gratis desde $ 2.500
@@ -155,8 +156,8 @@
                 <p class="footer-section-p">
                     Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.
                 </p>
-            </section>
-            <section class="footer-section">
+            </article>
+            <article class="footer-section" id="footer-article-3">
                 <i class="fas fa-user-shield"></i>
                 <h2 class="footer-section-h2">
                     Seguridad, de principio a fin
@@ -164,8 +165,8 @@
                 <p class="footer-section-p">
                     ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.
                 </p>
-            </section>
-        </div>
+            </article>
+        </section>
         <section class="footer-section">
             <h2 class="footer-section-h2">
                 Copyright © 1999-2020 MercadoLiebre S.R.L.

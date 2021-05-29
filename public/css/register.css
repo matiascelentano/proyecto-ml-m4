@@ -1,14 +1,14 @@
 *{
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
 }
 body{
+    position: relative;
+    min-height: 100vh;
     font-family: 'Roboto', sans-serif;
-    position: relative
 }
-
-/**HEADER**/
+/*********************  HEADER  **********************/
 header{
     background-color: #EAC926;
     padding-bottom: 5px;
@@ -107,90 +107,110 @@ a{
 .ul-right-purchases{
     width: 85px;
 }
-/********************MAIN***********************/
+
+/*********************  MAIN  **********************/
 main{
     background-color: #ebebeb;
     padding-top: 119px;
     padding-bottom: 520px;
 }
-.header-banner{
-    width: 100%;
-}
-.main-section{
-    width: 90%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.section-h2-titulo{
-    font-size: 22px;
-    width: 100%;
-    padding: 10px 0px;
+
+/***Container Formulario***/
+.form-register{
+    margin: 15px auto;
     text-align: center;
+    background-color: #ebebeb;
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.212);
+    width: 90vw;
+    max-width: 592px;
 }
-.container-article{
-    margin: 5px;
-    height: 360px;
+.titulo-form{
+    font-weight: bold;
+    font-size: 22px;
+    margin: auto;
+    padding: 15px 0px;
 }
-.container-product{
-    background-color: white;
-    width: 236px;
-    padding: 10px;
-    transition: all .2s;
-    border-radius: 4px;
+/***fieldsets de los inputs***/
+.fieldset-register{
+    border: none;
 }
-.container-info{
-    position: relative;
-    border-top: 1px solid #eee;
-    margin-bottom: 10px;
+/***labels de los inputs***/
+.fieldset-register label{
+    display: block;
 }
-.container-info i{
-    position: absolute;
-    top: -15px;
-    right: 5px;
+
+/***titulos de los inputs***/
+.titulo-user-datos{
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+/***contenedores de input***/
+.user-datos{
+    border: none;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.267);
+    border-radius: 3px;
+    width: 90%;
+    padding: 7px 0px;
+    padding-left: 7px;
+    max-width: 531px;
+    transition: all .3s;
+}
+.user-datos:focus{
+    outline: 0px;
+    box-shadow: 0 0 0 1pt black inset ;
+}
+.user-datos:hover{
+    background-color: #1259c3;
+    color: white;
+}
+.user-datos:hover::placeholder{
+    color: white;
+}
+
+/***Seccion de los botones radiales/checkboxes***/
+fieldset .radio-check{
+    padding: 10px 5px;
+    display: inline;
+}
+
+fieldset .checkboxes{
+    display: block;
+    padding: 5px 0px;
+}
+#fieldset-checkboxes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/***contenedor del input send file***/
+.container-sendfile{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+/***tamaño boton send file***/
+#avatar{
+    width: 50%;
+    min-width: 132px;
+}
+
+/***estilos de botones submit/reset***/
+.boton-ml{
     font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    color: #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
+    width: 50%;
+    min-width: 120px;
+    margin: 20px 0px 20px;
+    padding: 13px 0px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.267);
+    background-color: #1259c3;
+    color: white;
 }
-.article-contenido-precio{
-    display: inline-block;
-    font-size: 18px;
-}
-.article-contenido-sale{
-    display: inline-block;
-    font-size: 16px;
-    color: #39b54a;
-}
-.titulo-product{
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-.descrip{
-    font-size: 16px;
-    visibility: hidden;
-    opacity: 0%;
-    height: 0px;
-    transition: all .1s;
-}
-.container-product:hover{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-}
-.container-product:hover .descrip{
-    visibility: visible;
-    opacity: 100%;
-    margin-bottom: 10px;
-    height: 30px;
-}
-.article-img-product{
-    width: 100%;
-}
-/********************FOOTER***********************/
+
+/*********************  FOOTER  **********************/
+
 footer{
     background-color: white;
     text-align: center;
@@ -225,22 +245,14 @@ footer i{
     color: tomato;
 }
 
+
+/************      MEDIA QUERIES        ************/
 @media(min-width: 481px){
     .burger-menu{
         display: none;
     }
     main{
         padding-top: 97px;
-    }
-    .container-article{
-        height: 320px;
-    }
-    .container-product{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        width: 200px;
-    }
-    .container-product:hover .descrip{
-        height: 50px;
     }
     .header-top-bar{
         flex-wrap: nowrap;
@@ -308,21 +320,6 @@ footer i{
     main{
         padding-bottom: 245px;
         padding-top: 80.66px;
-    }
-    .main-section{
-        width: 100%;
-        margin-bottom: 2vh;
-    }
-    .container-article{
-        height: 320px;
-    }
-    .container-product{
-        min-width: 179px;
-        max-width: 231px;
-        width: 15vw;
-    }
-    .container-product:hover .descrip{
-        height: 40px;
     }
     footer{
         min-height: 215px;
