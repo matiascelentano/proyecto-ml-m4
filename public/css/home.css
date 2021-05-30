@@ -35,12 +35,11 @@ header{
 }
 /****barra de busqueda****/
 #search-bar{
-    text-align: center;
     border: none;
     border-radius: 3px;
     margin-top: 10px;
     width: 100%;
-    padding: 7.5px 29px 7.5px 0px;
+    padding: 7.5px 29px 7.5px 16px;
 }
 #search-bar:focus{
     outline: 0px;
