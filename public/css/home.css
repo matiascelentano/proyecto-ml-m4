@@ -55,9 +55,6 @@ header{
     border-left: 1px solid #eee;
     background-color: white;
 }
-a{
-    text-decoration: none;
-}
 .text-header{
     font-size: 14px;
     margin-top: 10px;
@@ -80,6 +77,11 @@ a{
     font-size: 16px;
     margin: 0px 5px;
 }
+.header-bottom-bar a{
+    color: black;
+    text-decoration: none;
+}
+
 .left-bottom-bar{
     list-style-type: none;
     display: flex;
@@ -117,8 +119,7 @@ main{
 }
 .main-section{
     width: 90%;
-    margin: auto;
-    margin-bottom: 3vh;
+    margin: 0px auto 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -315,7 +316,6 @@ footer i{
     }
     .main-section{
         width: 100%;
-        margin-bottom: 3vh;
     }
     .container-article{
         height: 320px;
@@ -323,7 +323,7 @@ footer i{
     .container-product{
         min-width: 179px;
         max-width: 231px;
-        width: 15vw;
+        width: 16vw;
     }
     .container-product:hover .descrip{
         height: 40px;
