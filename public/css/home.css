@@ -28,7 +28,7 @@ header{
     margin: 10px 15px 0px 0px;
     min-width: 100px;
 }
-/****formulario de barra de busqueda (afecta su tamaño)****/
+/****formulario de barra de busqueda (afecta tamaño barra busqueda)****/
 .form-search-bar{
     position: relative;
     width: 53%;
