@@ -119,6 +119,7 @@ main{
 .main-section{
     width: 90%;
     margin: auto;
+    margin-bottom: 3vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -130,7 +131,7 @@ main{
     text-align: center;
 }
 .container-article{
-    margin: 5px;
+    margin: 10px;
     height: 360px;
 }
 .container-product{
