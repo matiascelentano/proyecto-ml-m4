@@ -226,6 +226,7 @@ footer i{
     color: tomato;
 }
 
+/************      MEDIA QUERIES        ************/
 @media(min-width: 481px){
     .burger-menu{
         display: none;

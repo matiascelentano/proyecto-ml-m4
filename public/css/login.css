@@ -260,6 +260,8 @@ footer i{
     }
 
 }
+
+/************      MEDIA QUERIES        ************/
 @media(min-width: 769px){
     .header-top-bar {
         flex-wrap: nowrap;
