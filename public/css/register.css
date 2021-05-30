@@ -5,7 +5,6 @@
 }
 body{
     position: relative;
-    min-height: 100vh;
     font-family: 'Roboto', sans-serif;
 }
 /*********************  HEADER  **********************/
@@ -16,6 +15,7 @@ header{
     width: 100%;
     top: 0px;
 }
+/****parte superior de header(logo, searchbar y texto)****/
 .header-top-bar{
     display: flex;
     width: 95%;
@@ -27,11 +27,12 @@ header{
     margin: 10px 15px 0px 0px;
     min-width: 100px;
 }
-
+/****formulario de barra de busqueda (afecta su tamaño)****/
 .form-search-bar{
     position: relative;
     width: 53%;
 }
+/****barra de busqueda****/
 #search-bar{
     text-align: center;
     border: none;
@@ -44,6 +45,7 @@ header{
     outline: 0px;
     box-shadow: 0 0 0 1pt #1259c3 inset;
 }
+/****boton lupa search bar****/
 .search-button{
     position: absolute;
     right: 2px;
@@ -61,7 +63,7 @@ header{
     width: 100%;
     text-align: center;
 }
-
+/****menu hamburguesa para mobile****/
 .burger-menu{
     display: block;
     margin: auto;
@@ -71,16 +73,18 @@ header{
     border: 1px solid black;
     border-radius: 3px;
 }
-
+/****parte inferior de header(desde 481px de width en adelante)****/
 .header-bottom-bar{
     display: none;
     font-size: 16px;
     margin: 0px 5px;
 }
+/****estilo de los hyperlinks****/
 .header-bottom-bar a{
     color: black;
     text-decoration: none;
 }
+/****lista izquierda de barra inferior****/
 .left-bottom-bar{
     list-style-type: none;
     display: flex;
@@ -88,9 +92,10 @@ header{
 .left-bottom-bar li{
     margin-right: 10px;
 }
-.ul-long-li{
+.ul-left-li2{
     width: 55px;
 }
+/****parte inferior de header(desde 481px de width en adelante)****/
 .right-bottom-bar{
     list-style-type: none;
     display: flex;
@@ -222,10 +227,12 @@ footer{
     width: 100%;
     min-height: 490px;
 }
+/****iconos del footer****/
 footer i{
     font-size: 2em;
     color: #1259c3;
 }
+/****contenedor de articles del footer****/
 .container-footer{
     display: flex;
     flex-wrap: wrap;
@@ -319,7 +326,7 @@ footer i{
         margin: auto;
         justify-content: space-around;
     }
-    .ul-long-li{
+    .ul-left-li2{
         width: initial;
     }
     main{
