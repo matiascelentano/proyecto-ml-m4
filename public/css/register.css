@@ -275,12 +275,16 @@ footer i{
     main{
         padding-top: 98px;
     }
+    .logo{
+        margin-right: 5px;
+    }
     .form-search-bar {
         width: 53%;
     }
     .text-header{
         width: 49%;
         text-align: right;
+        margin-left: 6px;
         max-width: 212px;
     }
     #text-header-tablet{
