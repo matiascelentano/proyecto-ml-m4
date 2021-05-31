@@ -275,9 +275,6 @@ footer i{
     main{
         padding-top: 98px;
     }
-    .header-top-bar{
-        flex-wrap: nowrap;
-    }
     .form-search-bar {
         width: 53%;
     }
@@ -323,8 +320,7 @@ footer i{
 }
 @media(min-width: 769px){
     .header-top-bar {
-        flex-wrap: nowrap;
-        justify-content: center;
+        justify-content: space-evenly;
     }
     .logo {
         min-width: 141px;
