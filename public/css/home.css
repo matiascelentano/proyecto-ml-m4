@@ -19,19 +19,18 @@ header{
 /****parte superior de header(logo, searchbar y texto)****/
 .header-top-bar{
     display: flex;
-    width: 95%;
+    width: 98%;
     margin:  0px auto 10px;
-    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .logo{
-    width: 100px;
-    margin: 10px 15px 0px 0px;
-    min-width: 100px;
+    margin-top: 10px;
+    width: 120px;
 }
 /****formulario de barra de busqueda (afecta tamaño barra busqueda)****/
 .form-search-bar{
     position: relative;
-    width: 53%;
+    width: 60%;
 }
 /****barra de busqueda****/
 #search-bar{
@@ -66,6 +65,12 @@ header{
     margin-top: 10px;
     width: 100%;
     text-align: center;
+}
+#text-header-tablet{
+    display: none;
+}
+#text-header-mobile{
+    margin-bottom: 10px;
 }
 /****menu hamburguesa para mobile****/
 .burger-menu{
@@ -120,7 +125,7 @@ header{
 /*********************  MAIN  **********************/
 main{
     background-color: #ebebeb;
-    padding-top: 119px;
+    padding-top: 124.2px;
     padding-bottom: 520px;
 }
 .header-banner{
@@ -245,12 +250,13 @@ footer i{
 
 
 /************      MEDIA QUERIES        ************/
+
 @media(min-width: 481px){
     .burger-menu{
         display: none;
     }
     main{
-        padding-top: 97px;
+        padding-top: 98px;
     }
     .container-article{
         height: 320px;
@@ -272,6 +278,12 @@ footer i{
         width: 49%;
         text-align: right;
         max-width: 212px;
+    }
+    #text-header-tablet{
+        display: block;
+    }
+    #text-header-mobile{
+        display: none;
     }
     .header-bottom-bar{
         display: flex;
