@@ -313,7 +313,8 @@ footer i{
 }
 @media(min-width: 769px){
     .header-top-bar {
-        justify-content: space-evenly;
+        justify-content: center;
+        width: 85%;
     }
     .logo {
         min-width: 141px;
@@ -324,8 +325,9 @@ footer i{
     }
     .text-header{
         text-align: right;
-        width: 38%;
-        min-width: 278px;
+        width: 278px;
+        max-width: none;
+        margin-left: 10px;
     }
     .header-bottom-bar{
         width: 87%;
